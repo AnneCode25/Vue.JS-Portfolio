@@ -13,4 +13,13 @@
       Helvetica,
       sans-serif;
   }
+
+section {
+  border-bottom: 2px solid cadetblue;
+  padding: 100px 30px 100px 30px;
+
+}
   
+main {
+  background-color: rgba(95, 158, 160, 0.494);
+}
