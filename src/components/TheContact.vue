@@ -7,7 +7,7 @@
         </figure>
         <div class="sous-container">
           <label for="Name">Nom & Prénom: </label>
-          <input type="text" id="Name" placeholder="Nom & Prénom" v-model="name" />
+          <input type="text" id="Name" placeholder="John Doe" v-model="name" />
           <label for="Email">Email: </label>
           <input type="text" id="Email" placeholder="Email" v-model="email" />
           <label for="Object">Objet: </label>
@@ -47,10 +47,8 @@
   
   <style scoped>
   #formulaire {
-    background-color: rgba(95, 158, 160, 0.494);
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid cadetblue;
   }
   
   #formulaire h2 {
@@ -69,6 +67,10 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .sous-container label {
+    margin-bottom: 5px;
+  }
   
   .sous-container input {
     max-height: 20px;
@@ -78,8 +80,9 @@
     flex: 1 1 50%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 1px cadetblue;
-    border: none
-
+    border: none;
+    margin-bottom: 10px;
+    font-size: 70%;
   }
   .sous-container textarea {
     max-height: 150px;

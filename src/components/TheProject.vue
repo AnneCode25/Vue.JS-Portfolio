@@ -103,9 +103,7 @@ onMounted(() => {
 <style scoped>
 section {
   display: flex;
-  background-color: rgba(95, 158, 160, 0.494);
   flex-direction: column;
-  border-bottom: 2px solid cadetblue;
 }
 
 section h2 {

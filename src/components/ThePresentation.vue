@@ -42,9 +42,6 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(95, 158, 160, 0.494);
-  margin: 0;
-  padding: 150px 30px 100px 30px;
   align-items: center;
   border-bottom: 2px solid cadetblue;
 }

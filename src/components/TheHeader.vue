@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="{active: isHeaderActive}">
       <figure class="logo">
         <RouterLink to="/">
           <img src="@/assets/images/AV.svg.png" alt="logo" @click="scrollToTop" />
@@ -46,6 +46,9 @@
   const updateActive = (index) => {
     activeIndex.value = index
   }
+
+
+
   </script>
   
   <style scoped>
@@ -109,5 +112,15 @@
   .active {
     text-decoration: underline;
   }
+
+  /* Ajoutez le style de soulignement pour le lien actif */
+header nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Ajoutez le style de l'en-tête lorsque le menu est actif */
+header.active {
+  text-decoration: underline;
+}
   </style>
   
