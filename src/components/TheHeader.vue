@@ -31,7 +31,7 @@
     })
   }
   
-  //Création du tablea du menu ancrée + lien actif pour souligné l'élément actif dans le menu
+  //Création du tableau du menu ancrée + lien actif pour souligner l'élément actif dans le menu
 
   import { ref } from 'vue'
   
