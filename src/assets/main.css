@@ -13,4 +13,10 @@
       Helvetica,
       sans-serif;
   }
+
+section {
+  border-bottom: 2px solid cadetblue;
+  padding: 100px 30px 100px 30px;
+
+}
   

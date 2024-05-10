@@ -105,7 +105,6 @@ section {
   display: flex;
   background-color: rgba(95, 158, 160, 0.494);
   flex-direction: column;
-  padding: 100px 30px 200px 30px;
   border-bottom: 2px solid cadetblue;
 }
 
