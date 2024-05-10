@@ -1,0 +1,53 @@
+{
+    "creations": [
+      {
+        "name": "CV",
+        "slug": "CV",
+        "image": "CV/CV_ppale.png",
+        "images": [
+          "/public/images/CV/CV_ppale.png",
+          "/public/images/CV/CV_deuxieme.png",
+          "/public/images/CV/CV_troisieme.png"
+        ],
+        "id": 1,
+        "description": "Création de mon CV en ligne en HTML et CSS, et en utilisant le gestionnaire de version en ligne GitHub.",
+        "technologies": ["HTML5", "CSS3", "Flexbox"],
+        "lienGithub": "https://github.com/nnannou/CV",
+        "dateCreation": "février 2024",
+        "pageInternet": "https://nnannou.github.io/CV/"
+      },
+      {
+        "name": "Cahier des charges",
+        "slug": "cahier-des-charges",
+        "image": "cahier-des-charges/cahier-des-charges_ppale.jpg",
+        "images": [
+          "/public/images/cahier-des-charges/cahier-des-charges_ppale.jpg",
+          "/public/images/cahier-des-charges/concurrents.jpg",
+          "/public/images/cahier-des-charges/graphisme.jpg"
+        ],
+        "id": 2,
+        "description": "Rédaction d'un cahier des charges pour la société La Socketterie. Cette société souhaite créer un site web en ligne et nous a solicité pour la réalisation de ce projet.",
+        "technologies": [],
+        "lienGithub": "",
+        "dateCreation": "mars 2024",
+        "pageInternet": "/images/cahier-des-charges.pdf"
+      },
+      {
+        "name": "Dynamiser un espace de commentaire",
+        "slug": "dynamiser-un-espace-commentaire",
+        "image": "JS/dynamiser-un-espace-commentaire.png",
+        "images": [
+          "/public/images/JS/dynamiser-un-espace-commentaire.png",
+          "/public/images/JS/msg_erreur.png",
+          "/public/images/JS/test.png"
+        ],
+        "id": 3,
+        "description": "Dynamiser un espace commentaire afin de faire apparaître un nouveau commentaire directement dans la liste des commentaires au moment où l'on valide le formulaire, sans aucun rechargement de la page.",
+        "technologies": ["JavaScript"],
+        "lienGithub": "https://github.com/nnannou/Devoir-JS",
+        "dateCreation": "avril 2024",
+        "pageInternet": "https://nnannou.github.io/Devoir-JS/"
+      }
+    ]
+  }
+  
