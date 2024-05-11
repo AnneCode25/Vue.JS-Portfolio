@@ -14,9 +14,7 @@
           <input type="text" id="Object" placeholder="Objet" v-model="object">
           <label for="message">Message: </label>
           <textarea id="message" placeholder="Message" v-model="message"></textarea>
-          <!-- <a :href="mailToLink"> -->
             <button type="button" value="Envoyer" id="send" @click="sendEmail">Envoyer</button>
-          <!-- </a> -->
         </div>
       </div>
     </section>
@@ -31,22 +29,6 @@
   const object = ref('')
   const message = ref('')
   
-  // Fonction pour générer le lien mailto
-  // const mailToLink = () => {
-  //   const mailto = 'mailto:villette55@gmail.com'
-  //   const subject = `?subject=${encodeURIComponent(object.value)}`
-  //   const body = `&body=${encodeURIComponent(`Bonjour,
-  
-  //     Voici le message de ${name.value} :
-    
-  //   "${message.value}"
-  
-  //   Cordialement,
-  //   ${name.value} - ${email.value}`)}`
-  //   const fullLink = mailto + subject + body
-  //   window.locaion.href = fullLink
-  // }
-
 // Fonction pour envoyer un e-mail avec les données du formulaire
 const sendEmail = () => {
   const mailto = 'mailto:villette55@gmail.com'
@@ -115,23 +97,21 @@ ${name.value} - ${email.value}`)}`
     border: none;
   }
 
-  .sous-container a {
-    text-decoration: none;
-    margin-top: 10px;
-  }
-
   .sous-container button {
     max-height: 20px;
     width: 300px;
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex: 1 1 50%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 1px cadetblue;
     border: none;
     margin-bottom: 10px;
     font-size: 70%;
+    text-decoration: none;
+    margin-top: 10px;
   }
 
   </style>
