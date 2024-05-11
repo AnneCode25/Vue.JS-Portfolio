@@ -3,25 +3,27 @@
       <h2>Formulaire de contact</h2>
       <div class="container">
         <figure>
-          <img src="@/assets/images/sendEmail.png" alt="image envoie d'email" />
+          <img src="@/assets/images/sendEmail.png" alt="image envoie d'email">
         </figure>
         <div class="sous-container">
           <label for="Name">Nom & Prénom: </label>
-          <input type="text" id="Name" placeholder="John Doe" v-model="name" />
+          <input type="text" id="Name" placeholder="John Doe" v-model="name">
           <label for="Email">Email: </label>
-          <input type="text" id="Email" placeholder="Email" v-model="email" />
+          <input type="text" id="Email" placeholder="Email" v-model="email">
           <label for="Object">Objet: </label>
-          <input type="text" id="Object" placeholder="Objet" v-model="object" />
+          <input type="text" id="Object" placeholder="Objet" v-model="object">
           <label for="message">Message: </label>
           <textarea id="message" placeholder="Message" v-model="message"></textarea>
-          <a :href="mailToLink"><input type="submit" value="Envoyer" id="send" /></a>
+          <!-- <a :href="mailToLink"> -->
+            <button type="button" value="Envoyer" id="send" @click="sendEmail">Envoyer</button>
+          <!-- </a> -->
         </div>
       </div>
     </section>
   </template>
   
   <script setup>
-  import { ref, computed } from 'vue'
+  import { ref } from 'vue'
   
   // Propriétés réactives pour suivre les valeurs des champs du formulaire
   const name = ref('')
@@ -30,19 +32,37 @@
   const message = ref('')
   
   // Fonction pour générer le lien mailto
-  const mailToLink = computed(() => {
-    const mailto = 'mailto:villette55@gmail.com'
-    const subject = `?subject=${encodeURIComponent(object.value)}`
-    const body = `&body=${encodeURIComponent(`Bonjour,
+  // const mailToLink = () => {
+  //   const mailto = 'mailto:villette55@gmail.com'
+  //   const subject = `?subject=${encodeURIComponent(object.value)}`
+  //   const body = `&body=${encodeURIComponent(`Bonjour,
   
-      Voici le message de ${name.value} :
+  //     Voici le message de ${name.value} :
     
-    "${message.value}"
+  //   "${message.value}"
   
-    Cordialement,
-    ${name.value} - ${email.value}`)}`
-    return mailto + subject + body
-  })
+  //   Cordialement,
+  //   ${name.value} - ${email.value}`)}`
+  //   const fullLink = mailto + subject + body
+  //   window.locaion.href = fullLink
+  // }
+
+// Fonction pour envoyer un e-mail avec les données du formulaire
+const sendEmail = () => {
+  const mailto = 'mailto:villette55@gmail.com'
+  const subject = `subject=${encodeURIComponent(object.value)}`
+  const body = `body=${encodeURIComponent(`Bonjour,
+
+  Voici le message de ${name.value} :
+
+"${message.value}"
+
+Cordialement,
+${name.value} - ${email.value}`)}`
+  const fullLink = `${mailto}?${subject}&${body}`
+  window.open(fullLink, '_self') // Ouvre un nouvel e-mail dans la même fenêtre
+}
+
   </script>
   
   <style scoped>
@@ -98,6 +118,20 @@
   .sous-container a {
     text-decoration: none;
     margin-top: 10px;
+  }
+
+  .sous-container button {
+    max-height: 20px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px cadetblue;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 70%;
   }
 
   </style>

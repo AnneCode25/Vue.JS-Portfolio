@@ -2,14 +2,14 @@
     <footer>
       <div>
         <a href="https://github.com/nnannou" target="_blank">
-          <img src="@/assets/images/Github.png" alt="Logo Github" />
+          <img src="@/assets/images/Github.png" alt="Logo Github">
         </a>
         <a href="https://fr.linkedin.com/" target="_blank"
-          ><img src="@/assets/images/Linkedin.png" alt="Logo Linkedin"
-        /></a>
+          ><img src="@/assets/images/Linkedin.png" alt="Logo Linkedin">
+        </a>
         <a href="https://twitter.com/?lang=fr" target="_blank"
-          ><img src="@/assets/images/twitter.png" alt="Logo Twitter"
-        /></a>
+          ><img src="@/assets/images/twitter.png" alt="Logo Twitter">
+        </a>
       </div>
       <div>
         <p><small>&copy; Anne Villette. Tous droit réservés.</small></p>

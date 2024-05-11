@@ -1,9 +1,7 @@
 <template>
-    <header class="{active: isHeaderActive}">
+    <header>
       <figure class="logo">
-        <RouterLink to="/">
-          <img src="@/assets/images/AV.svg.png" alt="logo" @click="scrollToTop" />
-        </RouterLink>
+          <img src="@/assets/images/AV.svg.png" alt="logo" @click="scrollToTop">
       </figure>
       <h1>Portfolio - Développeuse Web Junior</h1>
       <nav id="nav">
@@ -21,7 +19,7 @@
     </header>
   </template>
   
-  <script setup lang="ts">
+<script setup lang="ts">
 
   //Fonction pour revenir en haut de la page lors du clic sur le logo
   const scrollToTop = () => {
@@ -47,11 +45,9 @@
     activeIndex.value = index
   }
 
-
-
-  </script>
+</script>
   
-  <style scoped>
+<style scoped>
   header {
     font-size: 80%;
     font-family: Bogart;
@@ -122,5 +118,5 @@ header nav ul li a.active {
 header.active {
   text-decoration: underline;
 }
-  </style>
+</style>
   
