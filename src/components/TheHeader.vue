@@ -3,7 +3,7 @@
       <figure class="logo">
           <img src="@/assets/images/AV.svg.png" alt="logo" @click="scrollToTop">
       </figure>
-      <h1>Portfolio - Développeuse Web Junior</h1>
+      <h1>Anne Villette - Développeuse Web Junior</h1>
       <nav id="nav">
         <ul>
           <li
