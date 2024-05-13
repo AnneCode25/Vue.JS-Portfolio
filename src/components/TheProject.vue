@@ -10,7 +10,7 @@
       >
         <h3>{{ creation.name }}</h3>
         <figure>
-          <img :src="`/public/images/${creation.image}`" :alt="creation.name" />
+          <img :src="`/public/images/${creation.image}`" :alt="creation.name">
         </figure>
       </div>
     </div>
@@ -22,13 +22,13 @@
         </div>
         <div class="Section2">
           <button @click="previousImage">
-            <img src="@/assets/images/fleche_gauche.png" alt="fleche gauche" />
+            <img src="@/assets/images/fleche_gauche.png" alt="fleche gauche">
           </button>
           <figure>
-            <img :src="currentImageSrc" alt="Image" />
+            <img :src="currentImageSrc" alt="Image">
           </figure>
           <button @click="nextImage">
-            <img src="@/assets/images/fleche_droite.png" alt="fleche droite" />
+            <img src="@/assets/images/fleche_droite.png" alt="fleche droite">
           </button>
         </div>
         <p><strong>Desription: </strong>{{ selectedCreation.description }}</p>

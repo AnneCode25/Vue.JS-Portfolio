@@ -1,7 +1,7 @@
 <template>
   <section id="presentation">
     <figure>
-      <img src="@/assets/images/photo.jpg" alt="Photo de profil" />
+      <img src="@/assets/images/photo.jpg" alt="Photo de profil">
     </figure>
     <div>
       <h2>Présentation</h2>
